@@ -1,7 +1,7 @@
 ﻿// HW1a Sales Total
 
 // Your Name: Dail Kinslow
-// Did you seek help ? If yes, specify the helper or web link here: 
+// Did you seek help ? If yes, specify the helper or web link here: Yes, the math package: https://learn.microsoft.com/en-us/dotnet/api/system.math?view=net-9.0
 
 using System;
 using System.Collections.Generic;
@@ -27,7 +27,13 @@ namespace HW1a_Sales
             double subTotal = amountItem * itemPrice;
             double salesTaxTotal = subTotal * salesTax;
             double total = subTotal * salesTax + (subTotal);
-            Console.WriteLine($"Your subtotal is: {subTotal}");
+
+            Console.WriteLine($"\tYour subtotal is: ${Math.Round(subTotal, 2)}.");
+            Console.WriteLine($"\tYour tax is: ${Math.Round(salesTaxTotal, 2)}.");
+            Console.WriteLine($"\tYour total is: ${Math.Round(total, 2)}.");
+
+            Console.WriteLine("Press any key to continue . . .");
+
             Console.ReadKey();
         }
     }
