@@ -27,6 +27,7 @@ namespace HW1b_Grade
             string lastName = Console.ReadLine();
             Console.WriteLine("What is your student ID?");
             string studentID = Console.ReadLine();
+
             Console.WriteLine("What is your overall grade percentage for Assignments?");
             double assignmentAvg = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("What is your overall grade percentage for Participation?");
